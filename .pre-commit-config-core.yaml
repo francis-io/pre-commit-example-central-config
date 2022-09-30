@@ -1,6 +1,7 @@
-# Common pre-commit config existing in all repos via git submodule
-repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
-    hooks:
-    - id: check-yaml
+# The below config will be appended to the core config in pre-commit-example-central-config/.pre-commit-config.yaml
+# NOTE: This yaml is indented 2 spaces to match the core config and enable it to be appended to the bottom of the core config
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.75.0
+  hooks:
+    - id: terraform_fmt
+    - id: terraform_docs
