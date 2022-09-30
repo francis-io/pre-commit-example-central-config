@@ -1,0 +1,6 @@
+# Common pre-commit config existing in all repos via git submodule
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    - id: check-yaml
